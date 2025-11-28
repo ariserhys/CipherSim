@@ -1,0 +1,94 @@
+MIT License with Ethical Use Clause
+
+Copyright (c) 2025 CipherSim Team
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+ETHICAL USE CLAUSE:
+
+This software is designed exclusively for educational purposes, authorized
+security testing, and professional cybersecurity training. By using this
+software, you explicitly agree to the following conditions:
+
+1. AUTHORIZED USE ONLY: You will only use this software for legitimate
+   educational purposes, authorized security testing with explicit permission,
+   or professional training in controlled environments.
+
+2. NO MALICIOUS USE: You will NOT use this software to:
+   a) Attack, compromise, or gain unauthorized access to any system or account
+   b) Test credentials against systems you do not own or have explicit
+      written authorization to test
+   c) Violate any applicable laws, regulations, or security policies
+   d) Cause harm, damage, or disruption to any system or service
+
+3. COMPLIANCE: You will comply with all applicable laws including but not
+   limited to:
+   - Computer Fraud and Abuse Act (CFAA) - United States
+   - Computer Misuse Act - United Kingdom
+   - General Data Protection Regulation (GDPR) - European Union
+   - All local, state, national, and international cybersecurity laws
+
+4. RESPONSIBILITY: You accept full responsibility for any consequences
+   resulting from your use of this software. The authors and contributors
+   shall not be held liable for any misuse or damage caused by this software.
+
+5. NO WARRANTY FOR MALICIOUS USE: This license and any associated warranties
+   are VOID if the software is used for malicious, unauthorized, or illegal
+   purposes.
+
+VIOLATION OF THESE ETHICAL TERMS IMMEDIATELY TERMINATES YOUR LICENSE TO USE
+THIS SOFTWARE AND MAY RESULT IN CRIMINAL OR CIVIL LIABILITY.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+EDUCATIONAL PURPOSE STATEMENT:
+
+CipherSim is a tool designed to teach cybersecurity concepts through safe,
+offline simulations. It demonstrates password security principles, hashing
+algorithms, attack techniques, and defensive strategies in a controlled
+educational environment.
+
+The tool includes multiple safeguards to prevent misuse:
+- Offline-only operation (no network capabilities)
+- Demo data only (no real credentials)
+- Prominent ethical warnings
+- Educational focus throughout
+
+Users are expected to:
+- Learn about password security
+- Understand cryptographic principles
+- Recognize attack patterns
+- Implement proper defenses
+- Use knowledge to BUILD secure systems, not to BREAK them
+
+REMEMBER: With great knowledge comes great responsibility. Use this tool
+ethically and legally. If in doubt, don't do it.
+
+---
+
+ATTRIBUTION:
+
+If you use CipherSim in academic research, please cite:
+
+CipherSim: Educational Password Security Simulation Tool
+Version 1.0.0 (2025)
+https://github.com/yourusername/CipherSim
+
+For inquiries about commercial use, training programs, or custom development,
+please contact: contact@ciphersim.example

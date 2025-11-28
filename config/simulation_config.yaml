@@ -1,0 +1,168 @@
+# Simulation Configuration for CipherSim
+
+# Hash Engine Settings
+hash_engine:
+  default_algorithm: argon2id
+  
+  argon2id:
+    time_cost: 3              # Number of iterations
+    memory_cost: 65536        # Memory in KB (64 MB)
+    parallelism: 4            # Number of threads
+    hash_length: 32           # Output hash length
+    salt_length: 16           # Salt length in bytes
+  
+  scrypt:
+    n: 16384                  # CPU/memory cost (2^14)
+    r: 8                      # Block size
+    p: 1                      # Parallelization
+    salt_length: 16
+  
+  pbkdf2:
+    iterations: 600000        # OWASP 2023 recommendation
+    hash_algorithm: sha256    # sha256 or sha512
+    salt_length: 16
+  
+  bcrypt:
+    rounds: 12                # Work factor
+
+# Attack Simulator Settings
+attack_simulator:
+  default_mode: dictionary
+  max_attempts: 1000000
+  speed_limit: 10000          # Attempts per second (realistic)
+  
+  brute_force:
+    default_charset: "abcdefghijklmnopqrstuvwxyz0123456789"
+    min_length: 1
+    max_length: 8
+  
+  dictionary:
+    wordlist_path: "data/wordlist_subset.txt"
+    common_passwords_path: "data/common_passwords.txt"
+  
+  hybrid:
+    enable_mutations: true
+    enable_leet_speak: true
+    append_numbers: [1, 123, 2024, 2025, "!"]
+  
+  mask:
+    placeholders:
+      "?l": "abcdefghijklmnopqrstuvwxyz"
+      "?u": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      "?d": "0123456789"
+      "?s": "!@#$%^&*()_+-=[]{}|;:,.<>?"
+      "?a": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;:,.<>?"
+
+# Defense Simulator Settings
+defense_simulator:
+  rate_limiting:
+    max_attempts_per_minute: 5
+    max_attempts_per_hour: 20
+  
+  account_lockout:
+    threshold: 5              # Lock after N failed attempts
+    duration_minutes: 15      # Lock duration
+  
+  progressive_delay:
+    enabled: true
+    base_delay_ms: 500        # Initial delay
+    multiplier: 2             # Exponential factor
+  
+  ip_throttling:
+    enabled: true
+    max_attempts_per_ip: 10
+    window_minutes: 60
+  
+  honeytoken:
+    passwords:
+      - "admin"
+      - "password"
+      - "123456"
+      - "root"
+      - "admin123"
+  
+  mfa:
+    require_mfa: true
+    allowed_methods:
+      - "totp"
+      - "webauthn"
+      - "sms"
+
+# GPU Simulation Settings
+gpu_simulation:
+  # Simulated hashes per second for different GPU tiers
+  performance:
+    rtx_4090:
+      argon2id: 50000
+      scrypt: 100000
+      pbkdf2_sha256: 10000000
+      bcrypt: 500000
+    
+    rtx_3080:
+      argon2id: 30000
+      scrypt: 60000
+      pbkdf2_sha256: 6000000
+      bcrypt: 300000
+    
+    cpu_only:
+      argon2id: 1000
+      scrypt: 2000
+      pbkdf2_sha256: 100000
+      bcrypt: 10000
+
+# Password Analyzer Settings
+password_analyzer:
+  min_length_recommended: 12
+  optimal_length: 16
+  min_entropy_bits: 60        # Minimum recommended entropy
+  strong_entropy_bits: 80     # Strong password threshold
+  
+  pattern_detection:
+    check_common_passwords: true
+    check_keyboard_patterns: true
+    check_sequences: true
+    check_dates: true
+    check_leet_speak: true
+    check_repetition: true
+
+# Security Education Settings
+security_education:
+  topics:
+    - hashing
+    - entropy
+    - salt
+    - rainbow_tables
+    - algorithms
+    - best_practices
+    - attacks
+
+# Safety Constraints
+safety:
+  offline_only: true                    # Never make network requests
+  no_real_credentials: true             # Only use demo data
+  max_simulation_duration_seconds: 300  # 5 minutes max
+  require_ethical_agreement: true       # Show warning
+  log_all_operations: false             # For educational use, logging disabled
+
+# Reporting Settings
+reporting:
+  formats:
+    - json
+    - html
+    - csv
+  
+  output_directory: "./reports"
+  
+  html:
+    include_charts: true
+    chart_library: "plotly"
+  
+  json:
+    pretty_print: true
+    indent: 2
+
+# Educational Dataset Limits
+datasets:
+  max_common_passwords: 1000      # Top N common passwords
+  max_wordlist_size: 10000        # Dictionary size limit
+  max_credential_pairs: 100       # For credential stuffing demo
