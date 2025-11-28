@@ -589,8 +589,6 @@ Copyright (c) 2025 CipherSim Team
 - 📖 **Documentation**: [View all docs](/)
 - 💬 **Issues**: [GitHub Issues](https://github.com/ariserhys/CipherSim/issues)
 - 🗣️ **Discussions**: [GitHub Discussions](https://github.com/ariserhys/CipherSim/discussions)
-- 📧 **Email**: support@ciphersim.example
-
 ### Quick Links
 
 - [Installation Guide](#-installation)
