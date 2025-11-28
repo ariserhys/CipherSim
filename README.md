@@ -587,8 +587,8 @@ Copyright (c) 2025 CipherSim Team
 ### Getting Help
 
 - 📖 **Documentation**: [View all docs](/)
-- 💬 **Issues**: [GitHub Issues](https://github.com/yourusername/CipherSim/issues)
-- 🗣️ **Discussions**: [GitHub Discussions](https://github.com/yourusername/CipherSim/discussions)
+- 💬 **Issues**: [GitHub Issues](https://github.com/ariserhys/CipherSim/issues)
+- 🗣️ **Discussions**: [GitHub Discussions](https://github.com/ariserhys/CipherSim/discussions)
 - 📧 **Email**: support@ciphersim.example
 
 ### Quick Links
@@ -623,6 +623,6 @@ ciphersim analyze "password123"
 
 ---
 
-**⭐ Star this repo** if you find it useful! | **🐛 Found a bug?** [Report it](https://github.com/yourusername/CipherSim/issues)
+**⭐ Star this repo** if you find it useful! | **🐛 Found a bug?** [Report it](https://github.com/ariserhys/CipherSim/issues)
 
 </div>
