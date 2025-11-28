@@ -185,7 +185,7 @@ If you discover a security vulnerability in CipherSim:
 - Test against production systems
 
 #### ✅ DO:
-1. **Report privately** to [security@ciphersim.example]
+1. **Report privately** to [@ariserhys]
 2. **Provide details**:
    - Description of vulnerability
    - Steps to reproduce
